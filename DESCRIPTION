@@ -1,0 +1,37 @@
+Package: SSDbain
+Type: Package
+Date: 2021-11-1
+Title: Sample Size Determination using AAFBF for Bayesian Hypothesis Testing Implemented in bain 
+Version: 0.1.0
+Authors@R: person("Qianrao","Fu",email="q.fu@uu.nl",role=c("aut","cre"))
+Description: Computes the required sample size using approximated adjusted fractional Bayes factors (AAFBF)
+            for equality, inequality, unconstrained  and complement hypotheses.
+            Functions to compute the sample size within Bayesian framework. The statistical underpinnings are
+    described in 
+    Fu, Hoijtink, and Moerbeek,(2021) <DOI: 10.3758/s13428-020-01408-1>,
+    Fu, Moerbeek, and Hoijtink,(2021) <DOI: 10.31234/osf.io/ymvb9>, and
+    Fu, (2021) <DOI:10.1037/met0000187>.
+License: GPL (> =3)
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 3.6.3),
+    stats
+Imports: 
+    WRS2,
+    EnvStats,
+    conflicted,
+    bain,
+    doParallel,
+    fungible,
+    stringr,
+    pkgmaker,
+    foreach,
+    doRNG 
+Suggests:
+    MASS,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr   
+Config/testthat/edition: 3
